@@ -26,8 +26,7 @@ namespace ConsoleApp3
         }
         public void StartMenu()
         {
-            Console.WriteLine("BENVENUTO IN BUDDYBANK");
-            Console.WriteLine("\n");
+           
             Console.WriteLine("Scegli l'operazione da effettuare");
             Console.WriteLine("1. Apri un nuovo conto");
             Console.WriteLine("2. Effettua un versamento");
@@ -89,6 +88,7 @@ namespace ConsoleApp3
                 Console.WriteLine("===========================");
                 _amount += value;
                 Console.WriteLine($"Saldo attuale: {_amount}");
+                StartMenu();
 
             }
 
